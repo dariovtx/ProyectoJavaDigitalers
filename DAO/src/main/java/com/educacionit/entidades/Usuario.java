@@ -1,5 +1,9 @@
 package com.educacionit.entidades;
-
+/**
+ * comentario de documentación
+ * @author DarioVictor
+ *
+ */
 public class Usuario {
 	private String correo;
 	private String clave;
@@ -23,6 +27,10 @@ public class Usuario {
 	public String getCorreo() {
 		return correo;
 	}
+	/**
+	 * este es el seteo del correo de usuario
+	 * @param correo
+	 */
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
