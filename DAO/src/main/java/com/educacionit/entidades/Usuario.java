@@ -27,10 +27,6 @@ public class Usuario {
 	public String getCorreo() {
 		return correo;
 	}
-	/**
-	 * este es el seteo del correo de usuario
-	 * @param correo
-	 */
 	public void setCorreo(String correo) {
 		this.correo = correo;
 	}
