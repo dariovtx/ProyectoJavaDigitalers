@@ -35,13 +35,12 @@ if(null!= usuario){
 	 <input type="email" name="correo" id="correo" required>
 	 <label for="correo">Clave:</label>
 	 <input type="password" name="clave" id="clave" required>
-	 <i class="bi bi-eye-slash" id= "verClave">Ver Clave</i>
+	 <i class="bi bi-eye-slash" id= "verClave"></i>
 	 <button type="submit" class="success">Enviar</button>
 	 <button type="reset" class="warning">Cancelar</button> 
  
    </form>
    
-<%--    <h2 style="color: red"><%=mensaje != null ? mensaje.getMensaje() : ""%> </h2> --%>
    
    <script src="scripts/Password.js"></script>
 </body>
