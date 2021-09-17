@@ -1,4 +1,8 @@
 package com.educacionit.entidades;
+
+import com.educacionit.exepciones.ExepcionPatrones;
+import com.educacionit.interfaces.Patrones;
+
 /**
  * comentario de documentación
  * @author DarioVictor
@@ -12,10 +16,11 @@ public class Usuario {
 		
 	}
 	
-	public Usuario(String correo, String clave, Boolean activo) {
+	public Usuario(String correo, String clave, Boolean activo) throws ExepcionPatrones {
 		super();
-		this.correo = correo;
-		this.clave = clave;
+		//Para no generar de nuevo las condiciones usamos los metodos set de correo y clave
+		setCorreo(correo);
+		setClave(clave);
 		this.activo = activo;
 	}
 
@@ -27,13 +32,19 @@ public class Usuario {
 	public String getCorreo() {
 		return correo;
 	}
-	public void setCorreo(String correo) {
+	public void setCorreo(String correo) throws ExepcionPatrones {
+		if(!Patrones.esCorreo(correo)) {
+			throw new ExepcionPatrones(1);
+		}
 		this.correo = correo;
 	}
 	public String getClave() {
 		return clave;
 	}
-	public void setClave(String clave) {
+	public void setClave(String clave) throws ExepcionPatrones {
+		if(!Patrones.esClave(clave)) {
+			throw new ExepcionPatrones(2);
+		}
 		this.clave = clave;
 	}
 

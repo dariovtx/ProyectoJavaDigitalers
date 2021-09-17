@@ -4,9 +4,7 @@ import java.util.List;
 
 public interface DAO <E, K> {
 	
-    boolean insertar(E e);
-	
-	boolean modificar(E e);
+    boolean guardar(E e);
 	
 	boolean eliminar(E e);
 	

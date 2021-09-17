@@ -10,8 +10,38 @@
   	<description></description>
   	<servlet-class>com.educacionit.ValidarUsuario</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ValidadLogin</servlet-name>
+  	<display-name>ValidadLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.educacionit.servlets.ValidadLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ValidarLogin</servlet-name>
+  	<display-name>ValidarLogin</display-name>
+  	<description></description>
+  	<servlet-class>com.educacionit.servlets.ValidarLogin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AlumnoControladora</servlet-name>
+  	<display-name>AlumnoControladora</display-name>
+  	<description></description>
+  	<servlet-class>com.educacionit.servlets.AlumnoControladora</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>ValidarUsuario</servlet-name>
   	<url-pattern>/ValidarUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ValidadLogin</servlet-name>
+  	<url-pattern>/ValidadLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ValidarLogin</servlet-name>
+  	<url-pattern>/ValidarLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AlumnoControladora</servlet-name>
+  	<url-pattern>/AlumnoControladora</url-pattern>
   </servlet-mapping>
 </web-app>
